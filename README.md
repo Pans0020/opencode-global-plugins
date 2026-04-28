@@ -13,6 +13,7 @@ primary/plugins/dual-profile-guard.js
 primary/plugins/pans-image-tool.js
 omo/plugins/codex-compact.ts
 omo/plugins/dual-profile-guard.js
+omo/plugins/pans-image-tool.js
 ```
 
 ## Usage
@@ -22,12 +23,38 @@ Copy the plugin file you want into your OpenCode global `plugins` directory, the
 ```json
 {
   "plugin": [
-    "file:///C:/Users/<you>/.config/opencode/plugins/codex-compact.ts"
+    "file:///C:/Users/<you>/.config/opencode/plugins/codex-compact.ts",
+    "file:///C:/Users/<you>/.config/opencode/plugins/pans-image-tool.js"
   ]
 }
 ```
 
 For the OMO profile, point the `file://` path at that profile's plugin directory.
+
+## Current local plugin entries
+
+Primary profile:
+
+```json
+{
+  "plugin": [
+    "file:///C:/Users/Pans0020/.config/opencode/plugins/codex-compact.ts",
+    "file:///C:/Users/Pans0020/.config/opencode/plugins/pans-image-tool.js"
+  ]
+}
+```
+
+OMO profile:
+
+```json
+{
+  "plugin": [
+    "oh-my-openagent",
+    "file:///C:/Users/Pans0020/.config/opencode-omo/plugins/codex-compact.ts",
+    "file:///C:/Users/Pans0020/.config/opencode-omo/plugins/pans-image-tool.js"
+  ]
+}
+```
 
 ## Notes
 
